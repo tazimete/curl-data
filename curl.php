@@ -19,8 +19,8 @@
 	$dom = new DOMDocument();
 	$dom->loadHTML( $html );
 	$dom->saveHTML();
-	//print_r($dom);
-	//echo $dom->textContent;
+	//print_r($dom); exit;
+	//echo $dom->textContent;  
 
 	$titles = $dom->getElementsByTagName('h1');
 	foreach ($titles as $title) {
